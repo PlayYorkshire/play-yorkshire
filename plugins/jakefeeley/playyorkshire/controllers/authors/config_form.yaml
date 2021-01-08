@@ -1,0 +1,10 @@
+name: Authors
+form: $/jakefeeley/playyorkshire/models/author/fields.yaml
+modelClass: JakeFeeley\PlayYorkshire\Models\Author
+defaultRedirect: jakefeeley/playyorkshire/authors
+create:
+    redirect: 'jakefeeley/playyorkshire/authors/update/:id'
+    redirectClose: jakefeeley/playyorkshire/authors
+update:
+    redirect: jakefeeley/playyorkshire/authors
+    redirectClose: jakefeeley/playyorkshire/authors

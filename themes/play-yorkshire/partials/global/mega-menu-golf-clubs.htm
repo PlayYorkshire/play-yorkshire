@@ -1,0 +1,19 @@
+description = "Displays list of featured golf courses"
+
+[builderList]
+modelClass = "JakeFeeley\PlayYorkshire\Models\GolfClub"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "name"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% for item in records %}
+    {% if item.is_featured == '1' %}
+        <li class="menu__item">
+            <a href="/golf-clubs/{{ item.county.slug }}/{{ item.city.slug}}/{{ item.slug }}" target="">{{ item.name }}</a>
+        </li>
+    {% endif %}
+{% endfor %}

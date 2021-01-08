@@ -1,0 +1,10 @@
+name: Pages
+form: $/jakefeeley/playyorkshire/models/page/fields.yaml
+modelClass: JakeFeeley\PlayYorkshire\Models\Page
+defaultRedirect: jakefeeley/playyorkshire/pages
+create:
+    redirect: 'jakefeeley/playyorkshire/pages/update/:id'
+    redirectClose: jakefeeley/playyorkshire/pages
+update:
+    redirect: jakefeeley/playyorkshire/pages
+    redirectClose: jakefeeley/playyorkshire/pages

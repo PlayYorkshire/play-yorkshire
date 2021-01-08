@@ -1,0 +1,4 @@
+title: Collections
+modelClass: JakeFeeley\PlayYorkshire\Models\Collection
+toolbar:
+    buttons: reorder_toolbar

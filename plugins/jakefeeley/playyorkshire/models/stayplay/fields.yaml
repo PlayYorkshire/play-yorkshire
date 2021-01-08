@@ -1,0 +1,55 @@
+fields:
+    name:
+        label: Name
+        span: auto
+        type: text
+    slug:
+        label: Slug
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text
+tabs:
+    fields:
+        date:
+            label: Date
+            mode: date
+            span: full
+            type: datepicker
+            tab: General
+        body:
+            label: Description
+            size: large
+            span: full
+            type: richeditor
+            tab: General
+        image:
+            label: Banner
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: Media
+        gallery:
+            label: Gallery
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: Media
+        venue:
+            label: Venue
+            nameFrom: name
+            descriptionFrom: description
+            span: full
+            emptyOption: 'Select Venue'
+            type: relation
+            comment: 'Select the venue'
+            tab: Accommodation

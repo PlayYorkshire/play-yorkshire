@@ -1,0 +1,125 @@
+title = "Golf Club by City"
+url = "/golf-clubs/:county/:slug"
+layout = "_main-layout"
+is_hidden = 0
+
+[builderDetails]
+modelClass = "JakeFeeley\PlayYorkshire\Models\City"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "name"
+notFoundMessage = "Record not found"
+==
+<div class="pagehero pagehero--places">
+  <h2 class="tab tab--orange tab--large"><span>Golf Clubs</span></h2>
+
+  <div class="pagehero__image">
+    <div
+      class="crop-up loaded"
+      data-gravity=".498,.453"
+      data-box="0,0,1,1"
+      data-zoom="true"
+      data-upscale-url="http://via.placeholder.com/1800x560"
+      data-upscale-step="200"
+      data-img-alt="Places"
+      style="position: relative; overflow: hidden;"
+    >
+      <img
+        alt="Places"
+        src="http://via.placeholder.com/1800x560"
+      />
+    </div>
+  </div>
+
+  <div class="pagehero__outercontent">
+    <div class="pagehero__innercontent">
+      <h1 class="heading--primary">
+        <a href="" title="Places" class="pagehero__link"> {{ record.name }} </a>
+      </h1>
+    </div>
+  </div>
+
+  <div class="pagehero__imagetag">
+    <a
+      href=""
+      title="Ribblehead Viaduct, Settle"
+      class="pagehero__imagetag__locationlink"
+    >
+      <h5 class="camera">Ribblehead Viaduct, Settle</h5>
+    </a>
+  </div>
+</div>
+
+<div class="band--topspace">
+  <div id="block1">
+    <section class="band band--">
+      <div
+        spottype="fixed_top"
+        typeindex="0"
+        id="browsi_adWrapper_ai_100_ati_1_rc_0"
+        style="display: none;"
+      >
+        <div id="browsi_adContainer_ai_100_ati_1_rc_0"></div>
+      </div>
+      <browsi_fixedtop_spot style="display:block;"></browsi_fixedtop_spot>
+      <div class="pagewrapper">
+        <h1 class="heading--secondary center">Golf Clubs in {{ record.name }}</h1>
+        <div class="intro center">
+          <p>{{ record.name }} is home to over {{ record.golfclubs.count }} golf clubs</p>
+        </div>
+
+        <div class="grid" data-itemratio="310x291" data-cols="4@768,2@480,1" data-spacing="19" id="wty_grid_0.5658008567755162">
+          <div class="grid__inner">
+            <div class="grid__itemwrapper">
+                <!-- Start -->
+                {% for item in record.golfclubs %}
+                {% if item.is_published == 1 %}
+                <div
+                    class="grid__item"
+                    style="width: 500px; top: 0px; left: 0px; position: absolute;"
+                >
+                    <article
+                        class="block block--hasimage block--orange block--wtyfeaturecontent"
+                        style="width: 310px;"
+                    >
+                        <a
+                            href="/golf-clubs/{{ item.county.slug }}/{{ item.city.slug }}/{{ item.slug }}"
+                            target=""
+                            class="block__link"
+                        >
+                            <div class="block__media" style="height: 291px;">
+                                <div class="block__image">
+                                    <img
+                                        data-src="http://via.placeholder.com/400"
+                                        alt="Otley"
+                                        class="slimmage"
+                                        data-slimmage="true"
+                                        src="http://via.placeholder.com/400"
+                                        data-pixel-width="640"
+                                    />
+                                </div>
+                                <h4 class="tab tab--orange tab--small"><span>{{ item.county.name }}</span></h4>
+                                <div class="block__contentouter">
+                                    <div class="block__content">
+                                        <h3 class="heading--secondary">{{ item.name }}</h3>
+                                        <div class="block__hovercontent">
+                                            <p>
+                                                {{ item.description }}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                {% endif %}
+                {% endfor %}
+                <!-- End -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

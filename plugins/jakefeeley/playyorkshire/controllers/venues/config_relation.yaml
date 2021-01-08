@@ -1,0 +1,35 @@
+opendays:
+    label: Open Day
+    manage:
+        form: $/jakefeeley/playyorkshire/models/openday/fields.yaml
+        list: $/jakefeeley/playyorkshire/models/openday/columns.yaml
+    view:
+        list: $/jakefeeley/playyorkshire/models/openday/columns.yaml
+        toolbarButtons: create|delete
+        
+stayplays:
+    label: Stay & Play
+    manage:
+        form: $/jakefeeley/playyorkshire/models/stayplay/fields.yaml
+        list: $/jakefeeley/playyorkshire/models/stayplay/columns.yaml
+    view:
+        list: $/jakefeeley/playyorkshire/models/stayplay/columns.yaml
+        toolbarButtons: create|delete
+        
+contacts:
+    label: Contacts
+    manage:
+        form: $/jakefeeley/playyorkshire/models/contact/fields.yaml
+        list: $/jakefeeley/playyorkshire/models/contact/columns.yaml
+    view:
+        list: $/jakefeeley/playyorkshire/models/contact/columns.yaml
+        toolbarButtons: create|delete
+        
+activities:
+    label: Activities
+    manage:
+        form: $/jakefeeley/playyorkshire/models/activity/fields.yaml
+        list: $/jakefeeley/playyorkshire/models/activity/columns.yaml
+    view:
+        list: $/jakefeeley/playyorkshire/models/activity/columns.yaml
+        toolbarButtons: create

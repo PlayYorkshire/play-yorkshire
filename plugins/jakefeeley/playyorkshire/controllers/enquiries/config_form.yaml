@@ -1,0 +1,10 @@
+name: Enquiries
+form: $/jakefeeley/playyorkshire/models/enquiry/fields.yaml
+modelClass: JakeFeeley\PlayYorkshire\Models\Enquiry
+defaultRedirect: jakefeeley/playyorkshire/enquiries
+create:
+    redirect: 'jakefeeley/playyorkshire/enquiries/update/:id'
+    redirectClose: jakefeeley/playyorkshire/enquiries
+update:
+    redirect: jakefeeley/playyorkshire/enquiries
+    redirectClose: jakefeeley/playyorkshire/enquiries

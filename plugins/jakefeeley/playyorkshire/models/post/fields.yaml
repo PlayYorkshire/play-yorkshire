@@ -1,0 +1,55 @@
+fields:
+    name:
+        label: Title
+        span: auto
+        type: text
+    slug:
+        label: Slug
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text
+    category:
+        label: Category
+        nameFrom: name
+        descriptionFrom: description
+        emptyOption: 'Select Category'
+        span: left
+        type: relation
+    author:
+        label: Author
+        nameFrom: name
+        descriptionFrom: description
+        emptyOption: 'Select Author'
+        span: auto
+        type: relation
+tabs:
+    fields:
+        body:
+            label: Body
+            size: giant
+            span: full
+            type: richeditor
+            tab: General
+        seo_title:
+            label: 'Meta Title'
+            span: full
+            type: text
+            tab: SEO
+        seo_description:
+            label: 'Meta Description'
+            size: small
+            span: full
+            type: textarea
+            tab: SEO
+        image:
+            label: 'Featured Image'
+            mode: file
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: Media

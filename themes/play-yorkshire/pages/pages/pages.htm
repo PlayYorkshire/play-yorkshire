@@ -1,0 +1,82 @@
+title = "Pages"
+url = "/:slug"
+layout = "_main-layout"
+is_hidden = 0
+
+[builderDetails]
+modelClass = "JakeFeeley\PlayYorkshire\Models\Page"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "name"
+notFoundMessage = "Record not found"
+==
+<div class="pagehero pagehero--accommodation">
+  <h2 class="tab tab--blue tab--large"><span>{{ record.name }}</span></h2>
+
+  <div class="pagehero__image">
+    <div
+      class="crop-up loaded"
+      data-gravity=".498,.453"
+      data-box="0,0,1,1"
+      data-zoom="true"
+      data-upscale-url="{% if record.banner %}{{ record.banner.path() }}{% else %}http://via.placeholder.com/1800x560{% endif %}"
+      data-upscale-step="200"
+      data-img-alt="Places"
+      style="position: relative; overflow: hidden;"
+    >
+      <img
+        alt="Places"
+        src="http://via.placeholder.com/1800x560"
+      />
+    </div>
+  </div>
+
+  <div class="pagehero__outercontent">
+    <div class="pagehero__innercontent">
+      <h1 class="heading--primary">
+        <a href="" title="Places" class="pagehero__link"> {{ record.name }} </a>
+      </h1>
+    </div>
+  </div>
+</div>
+
+<section class="band band--topspace">
+    <div class="pagewrapper">
+        <div class="row">
+            <div class="col col--x4" style="float: right;">
+                <aside>
+                    
+                    <h3 class="heading--quaternary">Share this page</h3>
+                    <ul class="social-share-links">
+                        <li class="social-share-links__item">
+                            <a href="#" class="icon icon--facebook"></a>
+                        </li>
+                        <li class="social-share-links__item">
+                            <a href="#" class="icon icon--twitter"></a>
+                        </li>
+                        <li class="social-share-links__item">
+                            <a href="#" class="icon icon--linkedin"></a>
+                        </li>
+                        
+                        <li class="social-share-links__item">
+                            <a href="#" class="icon icon--google-plus"></a>
+                        </li>
+                        <li class="social-share-links__item social-share-links__item--whatsapp">
+                            <a href="#" class="icon icon--whatsapp"></a>
+                        </li>
+                        <li class="social-share-links__item">
+                            <a href="#" class="icon icon--email"></a>
+                        </li>
+                    </ul>
+                    
+                </aside>
+            </div>
+            <div class="col col--x8" style="margin-left: 0;">
+                <article class="editorial cmstext">
+                    <h2>{{ record.name }}</h2>
+                    {{ record.body|raw }}
+                </article>
+            </div>
+        </div>
+    </div>
+</section>

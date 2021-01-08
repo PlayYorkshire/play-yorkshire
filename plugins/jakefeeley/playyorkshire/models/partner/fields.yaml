@@ -1,0 +1,14 @@
+fields:
+    name:
+        label: Name
+        span: full
+        type: text
+    image:
+        label: Logo
+        span: auto
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        type: fileupload

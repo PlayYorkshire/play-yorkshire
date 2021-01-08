@@ -1,0 +1,10 @@
+name: Amenities
+form: $/jakefeeley/playyorkshire/models/amenity/fields.yaml
+modelClass: JakeFeeley\PlayYorkshire\Models\Amenity
+defaultRedirect: jakefeeley/playyorkshire/amenities
+create:
+    redirect: 'jakefeeley/playyorkshire/amenities/update/:id'
+    redirectClose: jakefeeley/playyorkshire/amenities
+update:
+    redirect: jakefeeley/playyorkshire/amenities
+    redirectClose: jakefeeley/playyorkshire/amenities

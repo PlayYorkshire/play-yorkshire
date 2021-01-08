@@ -1,0 +1,12 @@
+list: $/jakefeeley/playyorkshire/models/venue/columns.yaml
+modelClass: JakeFeeley\PlayYorkshire\Models\Venue
+title: Venues
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'jakefeeley/playyorkshire/venues/update/:id'

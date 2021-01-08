@@ -1,0 +1,40 @@
+fields:
+    first_name:
+        label: 'First Name'
+        span: auto
+        type: text
+    last_name:
+        label: 'Last Name'
+        span: auto
+        type: text
+    date:
+        label: 'Date of Enquiry'
+        mode: date
+        span: auto
+        readOnly: 1
+        type: datepicker
+    status:
+        label: 'Status of Enquiry'
+        showSearch: true
+        span: auto
+        options:
+            Open: Open
+            Closed: Closed
+        type: dropdown
+tabs:
+    fields:
+        email:
+            label: Email
+            span: auto
+            type: text
+            tab: Details
+        phone:
+            label: Phone
+            span: auto
+            type: text
+            tab: Details
+        group_size:
+            label: 'Group Size'
+            span: auto
+            type: number
+            tab: Details

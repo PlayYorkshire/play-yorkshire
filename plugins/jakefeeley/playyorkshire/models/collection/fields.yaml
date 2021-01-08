@@ -1,0 +1,66 @@
+fields:
+    name:
+        label: Name
+        span: auto
+        type: text
+    slug:
+        label: Slug
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text
+tabs:
+    fields:
+        description:
+            label: Description
+            size: giant
+            span: full
+            type: richeditor
+            tab: General
+        golfclubs:
+            label: 'Golf Clubs'
+            span: full
+            nameFrom: name
+            descriptionFrom: description
+            type: relation
+            commentAbove: 'Which golf clubs belong to this collection?'
+            tab: General
+        seo_title:
+            label: 'Meta Title'
+            span: full
+            type: text
+            tab: SEO
+        seo_description:
+            label: 'Meta Description'
+            size: small
+            span: full
+            type: textarea
+            tab: SEO
+        image:
+            label: Image
+            mode: file
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: Media
+        itinerary:
+            label: 'Itinerary Builder'
+            prompt: 'Add Day'
+            span: full
+            type: repeater
+            tab: Itinerary
+            form:
+                fields:
+                    headline:
+                        label: Headline
+                        span: full
+                        type: text
+                    body:
+                        label: Description
+                        size: small
+                        span: full
+                        type: richeditor

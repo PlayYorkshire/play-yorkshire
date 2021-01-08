@@ -1,0 +1,30 @@
+fields:
+    first_name:
+        label: 'First Name'
+        span: auto
+        type: text
+    last_name:
+        label: 'Last Name'
+        span: auto
+        type: text
+    title:
+        label: 'Job Title'
+        span: full
+        type: text
+    email:
+        label: Email
+        oc.commentPosition: above
+        span: auto
+        type: text
+    alt_email:
+        label: 'Alternate Email'
+        span: auto
+        type: text
+    phone:
+        label: Landline
+        span: auto
+        type: text
+    mobile:
+        label: Mobile
+        span: auto
+        type: text

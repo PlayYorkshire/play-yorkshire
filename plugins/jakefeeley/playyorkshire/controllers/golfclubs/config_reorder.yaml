@@ -1,0 +1,4 @@
+title: GolfClubs
+modelClass: JakeFeeley\PlayYorkshire\Models\GolfClub
+toolbar:
+    buttons: reorder_toolbar

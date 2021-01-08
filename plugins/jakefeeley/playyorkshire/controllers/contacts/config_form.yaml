@@ -1,0 +1,10 @@
+name: Contacts
+form: $/jakefeeley/playyorkshire/models/contact/fields.yaml
+modelClass: JakeFeeley\PlayYorkshire\Models\Contact
+defaultRedirect: jakefeeley/playyorkshire/contacts
+create:
+    redirect: 'jakefeeley/playyorkshire/contacts/update/:id'
+    redirectClose: jakefeeley/playyorkshire/contacts
+update:
+    redirect: jakefeeley/playyorkshire/contacts
+    redirectClose: jakefeeley/playyorkshire/contacts

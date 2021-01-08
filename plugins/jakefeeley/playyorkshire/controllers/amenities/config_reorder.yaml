@@ -1,0 +1,4 @@
+title: Amenities
+modelClass: JakeFeeley\PlayYorkshire\Models\Amenity
+toolbar:
+    buttons: reorder_toolbar

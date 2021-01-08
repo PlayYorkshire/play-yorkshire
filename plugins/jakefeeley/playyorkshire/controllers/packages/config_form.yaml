@@ -1,0 +1,10 @@
+name: Packages
+form: $/jakefeeley/playyorkshire/models/package/fields.yaml
+modelClass: JakeFeeley\PlayYorkshire\Models\Package
+defaultRedirect: jakefeeley/playyorkshire/packages
+create:
+    redirect: 'jakefeeley/playyorkshire/packages/update/:id'
+    redirectClose: jakefeeley/playyorkshire/packages
+update:
+    redirect: jakefeeley/playyorkshire/packages
+    redirectClose: jakefeeley/playyorkshire/packages

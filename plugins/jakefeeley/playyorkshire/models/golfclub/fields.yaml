@@ -1,0 +1,223 @@
+fields:
+    name:
+        label: Name
+        span: auto
+        type: text
+    slug:
+        label: Slug
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text
+    is_featured:
+        label: 'Featured Club?'
+        span: auto
+        type: switch
+        comment: 'Do you want to show this Golf Club on the mega menu?'
+    is_published:
+        label: 'Publish Golf Club?'
+        span: auto
+        type: switch
+        comment: 'Do you want to publish this Golf Club to the website?'
+tabs:
+    fields:
+        section1:
+            label: Address
+            span: full
+            type: section
+            tab: General
+        address_line_1:
+            label: 'Line 1'
+            span: auto
+            type: text
+            tab: General
+        address_line_2:
+            label: 'Line 2'
+            span: auto
+            type: text
+            tab: General
+        address_line_3:
+            label: 'Line 3'
+            span: auto
+            type: text
+            tab: General
+        town:
+            label: Town
+            span: auto
+            type: text
+            tab: General
+        city:
+            label: City
+            nameFrom: name
+            descriptionFrom: description
+            emptyOption: 'Select City'
+            span: auto
+            type: relation
+            tab: General
+        county:
+            label: County
+            span: auto
+            nameFrom: name
+            descriptionFrom: description
+            emptyOption: 'Select County'
+            type: relation
+            tab: General
+        postcode:
+            label: 'Post Code'
+            span: auto
+            type: text
+            tab: General
+        section2:
+            label: 'Contact Details'
+            span: full
+            type: section
+            tab: General
+        phone:
+            label: Phone
+            span: auto
+            type: text
+            tab: General
+        email:
+            label: Email
+            span: auto
+            type: text
+            tab: General
+        website:
+            label: Website
+            span: auto
+            type: text
+            tab: General
+        section3:
+            label: Description
+            span: full
+            type: section
+            tab: General
+        description:
+            label: Description
+            span: full
+            size: giant
+            type: richeditor
+            tab: General
+        short_description:
+            label: 'Text area'
+            span: auto
+            size: ''
+            type: textarea
+            tab: General
+        section4:
+            label: Membership
+            span: full
+            cssClass: d-none
+            type: section
+            tab: Membership
+        membership:
+            label: 'Membership Plan'
+            nameFrom: name
+            descriptionFrom: description
+            span: auto
+            emptyOption: 'Select membership plan'
+            type: relation
+            commentAbove: 'Which membership plan does this club belong to?'
+            tab: Membership
+        membership_renewal_date:
+            label: 'Renewal Date'
+            mode: date
+            span: auto
+            trigger:
+                action: enable
+                field: membership_plan
+                condition: ''
+            type: datepicker
+            commentAbove: 'When is the subscription due for renewal?'
+            tab: Membership
+        invoices:
+            span: full
+            path: $/jakefeeley/playyorkshire/controllers/golfclubs/invoices.htm
+            type: partial
+            tab: Membership
+        opendays:
+            span: full
+            path: $/jakefeeley/playyorkshire/controllers/golfclubs/opendays.htm
+            type: partial
+            tab: 'Open Days'
+        partial1:
+            span: full
+            path: $/jakefeeley/playyorkshire/controllers/golfclubs/stayplays.htm
+            type: partial
+            tab: 'Stay & Play'
+        partial3:
+            span: full
+            cssClass: ''
+            path: $/jakefeeley/playyorkshire/controllers/golfclubs/amenities.htm
+            type: partial
+            tab: Amenities
+        contacts:
+            span: full
+            path: $/jakefeeley/playyorkshire/controllers/golfclubs/contacts.htm
+            type: partial
+            tab: Contacts
+        activities:
+            span: full
+            path: $/jakefeeley/playyorkshire/controllers/golfclubs/activities.htm
+            type: partial
+            tab: Activities
+        partial2:
+            span: full
+            path: $/jakefeeley/playyorkshire/controllers/golfclubs/enquiries.htm
+            type: partial
+            tab: Enquiries
+        longitude:
+            label: Longitude
+            span: auto
+            type: text
+            tab: Map
+        latitude:
+            label: Latitude
+            span: auto
+            type: text
+            tab: Map
+        seo_title:
+            label: 'Meta Title'
+            span: full
+            type: text
+            tab: SEO
+        seo_description:
+            label: 'Meta Description'
+            size: small
+            span: full
+            type: textarea
+            tab: SEO
+        image:
+            label: Logo
+            mode: file
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            commentAbove: 'Upload the Golf Clubs logo here'
+            tab: Media
+        banner:
+            label: Banner
+            mode: file
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            commentAbove: 'This is the banner image used at the top of the golf clubs profile page'
+            tab: Media
+        gallery:
+            label: Gallery
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: auto
+                extension: jpg
+            span: auto
+            type: fileupload
+            commentAbove: 'Upload images for the picture gallery. Remember each membership tier has limits'
+            tab: Media

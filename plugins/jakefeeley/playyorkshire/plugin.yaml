@@ -1,0 +1,118 @@
+plugin:
+    name: 'jakefeeley.playyorkshire::lang.plugin.name'
+    description: 'jakefeeley.playyorkshire::lang.plugin.description'
+    author: Bitpix
+    icon: oc-icon-cog
+    homepage: ''
+permissions:
+    '001':
+        tab: Staff
+        label: Staff
+navigation:
+    blog:
+        label: Blog
+        url: jakefeeley/playyorkshire/posts
+        icon: icon-newspaper-o
+        permissions:
+            - '001'
+        sideMenu:
+            posts:
+                label: Posts
+                url: jakefeeley/playyorkshire/posts/create
+                icon: icon-newspaper-o
+                permissions:
+                    - '001'
+            new-post:
+                label: New
+                url: /
+                icon: icon-plus
+                permissions:
+                    - '001'
+            categories:
+                label: Categories
+                url: jakefeeley/playyorkshire/categories
+                icon: icon-book
+                permissions:
+                    - '001'
+            author:
+                label: Authors
+                url: jakefeeley/playyorkshire/authors
+                icon: icon-users
+                permissions:
+                    - '001'
+    main-menu-golf:
+        label: 'Golf Clubs'
+        url: jakefeeley/playyorkshire/golfclubs
+        icon: icon-building
+        permissions:
+            - '001'
+        sideMenu:
+            side-menu-new:
+                label: New
+                url: /
+                icon: icon-plus
+                permissions:
+                    - '001'
+            side-menu-collections:
+                label: Collections
+                url: jakefeeley/playyorkshire/collections
+                icon: icon-group
+                permissions:
+                    - '001'
+            side-menu-amenity:
+                label: Amenities
+                url: jakefeeley/playyorkshire/amenities
+                icon: icon-cogs
+                permissions:
+                    - '001'
+    main-menu-page:
+        label: Pages
+        url: jakefeeley/playyorkshire/pages
+        icon: icon-edit
+        permissions:
+            - '001'
+        sideMenu:
+            side-menu-new-page:
+                label: New
+                url: /
+                icon: icon-plus
+                permissions:
+                    - '001'
+    main-menu-partners:
+        label: Partners
+        url: jakefeeley/playyorkshire/partners
+        icon: icon-users
+        permissions:
+            - '001'
+        sideMenu:
+            side-menu-new:
+                label: New
+                url: jakefeeley/playyorkshire/partners/create
+                icon: icon-plus
+    main-menu-profile-ambassadors:
+        label: Ambassadors
+        url: jakefeeley/playyorkshire/ambassadors
+        icon: icon-user
+        permissions:
+            - '001'
+    main-menu-locations:
+        label: Locations
+        url: jakefeeley/playyorkshire/counties
+        icon: icon-location-arrow
+        sideMenu:
+            side-menu-counties:
+                label: Counties
+                url: jakefeeley/playyorkshire/counties
+                icon: icon-location-arrow
+            side-menu-city:
+                label: Cities
+                url: jakefeeley/playyorkshire/cities
+                icon: icon-map-marker
+    main-menu-venue:
+        label: Venues
+        url: jakefeeley/playyorkshire/venues
+        icon: icon-home
+    main-menu-enquiries:
+        label: Enquiries
+        url: jakefeeley/playyorkshire/enquiries
+        icon: icon-envelope

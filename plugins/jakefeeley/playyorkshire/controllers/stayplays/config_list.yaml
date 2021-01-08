@@ -1,0 +1,12 @@
+list: $/jakefeeley/playyorkshire/models/stayplay/columns.yaml
+modelClass: JakeFeeley\PlayYorkshire\Models\StayPlay
+title: StayPlays
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'jakefeeley/playyorkshire/stayplays/update/:id'

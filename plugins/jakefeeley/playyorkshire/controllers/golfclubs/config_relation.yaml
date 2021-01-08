@@ -1,0 +1,59 @@
+opendays:
+    label: Open Day
+    manage:
+        form: $/jakefeeley/playyorkshire/models/openday/fields.yaml
+        list: $/jakefeeley/playyorkshire/models/openday/columns.yaml
+    view:
+        list: $/jakefeeley/playyorkshire/models/openday/columns.yaml
+        toolbarButtons: create|delete
+        
+stayplays:
+    label: Stay & Play
+    manage:
+        form: $/jakefeeley/playyorkshire/models/stayplay/fields.yaml
+        list: $/jakefeeley/playyorkshire/models/stayplay/columns.yaml
+    view:
+        list: $/jakefeeley/playyorkshire/models/stayplay/columns.yaml
+        toolbarButtons: create|delete
+        
+contacts:
+    label: Contacts
+    manage:
+        form: $/jakefeeley/playyorkshire/models/contact/fields.yaml
+        list: $/jakefeeley/playyorkshire/models/contact/columns.yaml
+    view:
+        list: $/jakefeeley/playyorkshire/models/contact/columns.yaml
+        toolbarButtons: create|delete
+        
+activities:
+    label: Activities
+    manage:
+        form: $/jakefeeley/playyorkshire/models/activity/fields.yaml
+        list: $/jakefeeley/playyorkshire/models/activity/columns.yaml
+    view:
+        list: $/jakefeeley/playyorkshire/models/activity/columns.yaml
+        toolbarButtons: create
+enquiries:
+    label: Enquiries
+    manage:
+        form: $/jakefeeley/playyorkshire/models/enquiry/fields.yaml
+        list: $/jakefeeley/playyorkshire/models/enquiry/columns.yaml
+    view:
+        list: $/jakefeeley/playyorkshire/models/enquiry/columns.yaml
+        toolbarButtons: create
+amenities:
+    label: Amenities
+    manage:
+        form: $/jakefeeley/playyorkshire/models/amenity/fields.yaml
+        list: $/jakefeeley/playyorkshire/models/amenity/columns.yaml
+    view:
+        list: $/jakefeeley/playyorkshire/models/amenity/columns.yaml
+        toolbarButtons: create|add|delete
+invoices:
+    label: Invoices
+    manage:
+        form: $/jakefeeley/playyorkshire/models/invoice/fields.yaml
+        list: $/jakefeeley/playyorkshire/models/invoice/columns.yaml
+    view:
+        list: $/jakefeeley/playyorkshire/models/invoice/columns.yaml
+        toolbarButtons: create|delete

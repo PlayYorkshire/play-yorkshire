@@ -1,0 +1,230 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table jakefeeley_playyorkshire_pages'
+    - builder_table_create_jakefeeley_playyorkshire_pages.php
+1.0.3:
+    - 'Created table jakefeeley_playyorkshire_golf_clubs'
+    - builder_table_create_jakefeeley_playyorkshire_golf_clubs.php
+1.0.4:
+    - 'Created table jakefeeley_playyorkshire_cities'
+    - builder_table_create_jakefeeley_playyorkshire_cities.php
+1.0.5:
+    - 'Created table jakefeeley_playyorkshire_amenities'
+    - builder_table_create_jakefeeley_playyorkshire_amenities.php
+1.0.6:
+    - 'Created table jakefeeley_playyorkshire_collections'
+    - builder_table_create_jakefeeley_playyorkshire_collections.php
+1.0.7:
+    - 'Created table jakefeeley_playyorkshire_posts'
+    - builder_table_create_jakefeeley_playyorkshire_posts.php
+1.0.8:
+    - 'Created table jakefeeley_playyorkshire_categories'
+    - builder_table_create_jakefeeley_playyorkshire_categories.php
+1.0.9:
+    - 'Created table jakefeeley_playyorkshire_authors'
+    - builder_table_create_jakefeeley_playyorkshire_authors.php
+1.0.10:
+    - 'Created table jakefeeley_playyorkshire_packages'
+    - builder_table_create_jakefeeley_playyorkshire_packages.php
+1.0.11:
+    - 'Updated table jakefeeley_playyorkshire_golf_clubs'
+    - builder_table_update_jakefeeley_playyorkshire_golf_clubs.php
+1.0.12:
+    - 'Updated table jakefeeley_playyorkshire_golf_clubs'
+    - builder_table_update_jakefeeley_playyorkshire_golf_clubs_2.php
+1.0.13:
+    - 'Updated table jakefeeley_playyorkshire_golf_clubs'
+    - builder_table_update_jakefeeley_playyorkshire_golf_clubs_3.php
+1.0.14:
+    - 'Created table jakefeeley_playyorkshire_golfclubs_collections'
+    - builder_table_create_jakefeeley_playyorkshire_golfclubs_collections.php
+1.0.15:
+    - 'Updated table jakefeeley_playyorkshire_golf_clubs'
+    - builder_table_update_jakefeeley_playyorkshire_golf_clubs_4.php
+1.0.16:
+    - 'Drop table jakefeeley_playyorkshire_golfclubs_collections'
+    - builder_table_delete_jakefeeley_playyorkshire_golfclubs_collections.php
+1.0.17:
+    - 'Updated table jakefeeley_playyorkshire_golf_clubs'
+    - builder_table_update_jakefeeley_playyorkshire_golf_clubs_5.php
+1.0.18:
+    - 'Updated table jakefeeley_playyorkshire_golf_clubs'
+    - builder_table_update_jakefeeley_playyorkshire_golf_clubs_6.php
+1.0.19:
+    - 'Created table jakefeeley_playyorkshire_partners'
+    - builder_table_create_jakefeeley_playyorkshire_partners.php
+1.0.20:
+    - 'Created table jakefeeley_playyorkshire_golfclub_collection'
+    - builder_table_create_jakefeeley_playyorkshire_golfclub_collection.php
+1.0.21:
+    - 'Updated table jakefeeley_playyorkshire_golfclub_collection'
+    - builder_table_update_jakefeeley_playyorkshire_golfclub_collection.php
+1.0.22:
+    - 'Updated table jakefeeley_playyorkshire_collections'
+    - builder_table_update_jakefeeley_playyorkshire_collections.php
+1.0.23:
+    - 'Updated table jakefeeley_playyorkshire_golf_clubs'
+    - builder_table_update_jakefeeley_playyorkshire_golf_clubs_7.php
+1.0.24:
+    - 'Updated table jakefeeley_playyorkshire_collections'
+    - builder_table_update_jakefeeley_playyorkshire_collections_2.php
+1.0.25:
+    - 'Updated table jakefeeley_playyorkshire_posts'
+    - builder_table_update_jakefeeley_playyorkshire_posts.php
+1.0.26:
+    - 'Updated table jakefeeley_playyorkshire_posts'
+    - builder_table_update_jakefeeley_playyorkshire_posts_2.php
+1.0.27:
+    - 'Updated table jakefeeley_playyorkshire_posts'
+    - builder_table_update_jakefeeley_playyorkshire_posts_3.php
+1.0.28:
+    - 'Created table jakefeeley_playyorkshire_ambassadors'
+    - builder_table_create_jakefeeley_playyorkshire_ambassadors.php
+1.0.29:
+    - 'Updated table jakefeeley_playyorkshire_ambassadors'
+    - builder_table_update_jakefeeley_playyorkshire_ambassadors.php
+1.0.30:
+    - 'Updated table jakefeeley_playyorkshire_ambassadors'
+    - builder_table_update_jakefeeley_playyorkshire_ambassadors_2.php
+1.0.31:
+    - 'Created table jakefeeley_playyorkshire_counties'
+    - builder_table_create_jakefeeley_playyorkshire_counties.php
+1.0.32:
+    - 'Updated table jakefeeley_playyorkshire_cities'
+    - builder_table_update_jakefeeley_playyorkshire_cities.php
+1.0.33:
+    - 'Updated table jakefeeley_playyorkshire_golf_clubs'
+    - builder_table_update_jakefeeley_playyorkshire_golf_clubs_8.php
+1.0.34:
+    - 'Updated table jakefeeley_playyorkshire_golf_clubs'
+    - builder_table_update_jakefeeley_playyorkshire_golf_clubs_9.php
+1.0.35:
+    - 'Updated table jakefeeley_playyorkshire_golf_clubs'
+    - builder_table_update_jakefeeley_playyorkshire_golf_clubs_10.php
+1.0.36:
+    - 'Updated table jakefeeley_playyorkshire_golf_clubs'
+    - builder_table_update_jakefeeley_playyorkshire_golf_clubs_11.php
+1.0.37:
+    - 'Updated table jakefeeley_playyorkshire_golf_clubs'
+    - builder_table_update_jakefeeley_playyorkshire_golf_clubs_12.php
+1.0.38:
+    - 'Created table jakefeeley_playyorkshire_open_days'
+    - builder_table_create_jakefeeley_playyorkshire_open_days.php
+1.0.39:
+    - 'Updated table jakefeeley_playyorkshire_open_days'
+    - builder_table_update_jakefeeley_playyorkshire_open_days.php
+1.0.40:
+    - 'Updated table jakefeeley_playyorkshire_open_days'
+    - builder_table_update_jakefeeley_playyorkshire_open_days_2.php
+1.0.41:
+    - 'Created table jakefeeley_playyorkshire_golfclub_amenities'
+    - builder_table_create_jakefeeley_playyorkshire_golfclub_amenities.php
+1.0.42:
+    - 'Updated table jakefeeley_playyorkshire_golfclub_amenities'
+    - builder_table_update_jakefeeley_playyorkshire_golfclub_amenities.php
+1.0.43:
+    - 'Updated table jakefeeley_playyorkshire_golfclub_amenities'
+    - builder_table_update_jakefeeley_playyorkshire_golfclub_amenities_2.php
+1.0.44:
+    - 'Updated table jakefeeley_playyorkshire_golf_clubs'
+    - builder_table_update_jakefeeley_playyorkshire_golf_clubs_13.php
+1.0.45:
+    - 'Updated table jakefeeley_playyorkshire_amenities'
+    - builder_table_update_jakefeeley_playyorkshire_amenities.php
+1.0.46:
+    - 'Updated table jakefeeley_playyorkshire_golfclub_amenities'
+    - builder_table_update_jakefeeley_playyorkshire_golfclub_amenity.php
+1.0.47:
+    - 'Created table jakefeeley_playyorkshire_membership'
+    - builder_table_create_jakefeeley_playyorkshire_membership.php
+1.0.48:
+    - 'Updated table jakefeeley_playyorkshire_golf_clubs'
+    - builder_table_update_jakefeeley_playyorkshire_golf_clubs_14.php
+1.0.49:
+    - 'Created table jakefeeley_playyorkshire_play_stay'
+    - builder_table_create_jakefeeley_playyorkshire_play_stay.php
+1.0.50:
+    - 'Created table jakefeeley_playyorkshire_contacts'
+    - builder_table_create_jakefeeley_playyorkshire_contacts.php
+1.0.51:
+    - 'Created table jakefeeley_playyorkshire_activities'
+    - builder_table_create_jakefeeley_playyorkshire_activities.php
+1.0.52:
+    - 'Updated table jakefeeley_playyorkshire_activities'
+    - builder_table_update_jakefeeley_playyorkshire_activities.php
+1.0.53:
+    - 'Updated table jakefeeley_playyorkshire_stay_play'
+    - builder_table_update_jakefeeley_playyorkshire_stay_play.php
+1.0.54:
+    - 'Created table jakefeeley_playyorkshire_'
+    - builder_table_create_jakefeeley_playyorkshire_.php
+1.0.55:
+    - 'Updated table jakefeeley_playyorkshire_venues'
+    - builder_table_update_jakefeeley_playyorkshire_venues.php
+1.0.56:
+    - 'Created table jakefeeley_playyorkshire_venues_amenities'
+    - builder_table_create_jakefeeley_playyorkshire_venues_amenities.php
+1.0.57:
+    - 'Updated table jakefeeley_playyorkshire_venues'
+    - builder_table_update_jakefeeley_playyorkshire_venues_2.php
+1.0.58:
+    - 'Updated table jakefeeley_playyorkshire_venues_amenities'
+    - builder_table_update_jakefeeley_playyorkshire_amenities_venues.php
+1.0.59:
+    - 'Updated table jakefeeley_playyorkshire_amenities'
+    - builder_table_update_jakefeeley_playyorkshire_amenities_2.php
+1.0.60:
+    - 'Updated table jakefeeley_playyorkshire_venues'
+    - builder_table_update_jakefeeley_playyorkshire_venues_3.php
+1.0.61:
+    - 'Updated table jakefeeley_playyorkshire_contacts'
+    - builder_table_update_jakefeeley_playyorkshire_contacts.php
+1.0.62:
+    - 'Updated table jakefeeley_playyorkshire_contacts'
+    - builder_table_update_jakefeeley_playyorkshire_contacts_2.php
+1.0.63:
+    - 'Updated table jakefeeley_playyorkshire_activities'
+    - builder_table_update_jakefeeley_playyorkshire_activities_2.php
+1.0.64:
+    - 'Updated table jakefeeley_playyorkshire_stay_play'
+    - builder_table_update_jakefeeley_playyorkshire_stay_play_2.php
+1.0.65:
+    - 'Updated table jakefeeley_playyorkshire_venues'
+    - builder_table_update_jakefeeley_playyorkshire_venues_4.php
+1.0.66:
+    - 'Updated table jakefeeley_playyorkshire_venues'
+    - builder_table_update_jakefeeley_playyorkshire_venues_5.php
+1.0.67:
+    - 'Updated table jakefeeley_playyorkshire_venues'
+    - builder_table_update_jakefeeley_playyorkshire_venues_6.php
+1.0.68:
+    - 'Updated table jakefeeley_playyorkshire_venues'
+    - builder_table_update_jakefeeley_playyorkshire_venues_7.php
+1.0.69:
+    - 'Updated table jakefeeley_playyorkshire_venues'
+    - builder_table_update_jakefeeley_playyorkshire_venues_8.php
+1.0.70:
+    - 'Updated table jakefeeley_playyorkshire_venues'
+    - builder_table_update_jakefeeley_playyorkshire_venues_9.php
+1.0.71:
+    - 'Created table jakefeeley_playyorkshire_enquiries'
+    - builder_table_create_jakefeeley_playyorkshire_enquiries.php
+1.0.72:
+    - 'Updated table jakefeeley_playyorkshire_enquiries'
+    - builder_table_update_jakefeeley_playyorkshire_enquiries.php
+1.0.73:
+    - 'Updated table jakefeeley_playyorkshire_enquiries'
+    - builder_table_update_jakefeeley_playyorkshire_enquiries_2.php
+1.0.74:
+    - 'Updated table jakefeeley_playyorkshire_enquiries'
+    - builder_table_update_jakefeeley_playyorkshire_enquiries_3.php
+1.0.75:
+    - 'Updated table jakefeeley_playyorkshire_enquiries'
+    - builder_table_update_jakefeeley_playyorkshire_enquiries_4.php
+1.0.76:
+    - 'Created table jakefeeley_playyorkshire_invoices'
+    - builder_table_create_jakefeeley_playyorkshire_invoices.php
+1.0.77:
+    - 'Updated table jakefeeley_playyorkshire_invoices'
+    - builder_table_update_jakefeeley_playyorkshire_invoices.php

@@ -1,0 +1,12 @@
+list: $/jakefeeley/playyorkshire/models/package/columns.yaml
+modelClass: JakeFeeley\PlayYorkshire\Models\Package
+title: Packages
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'jakefeeley/playyorkshire/packages/update/:id'

@@ -1,0 +1,4 @@
+title: Cities
+modelClass: JakeFeeley\PlayYorkshire\Models\City
+toolbar:
+    buttons: reorder_toolbar

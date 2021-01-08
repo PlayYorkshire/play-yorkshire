@@ -1,0 +1,22 @@
+fields:
+    name:
+        label: Name
+        span: auto
+        type: text
+tabs:
+    fields:
+        position:
+            label: Position
+            span: auto
+            type: text
+            tab: General
+        image:
+            label: Image
+            mode: file
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: Media

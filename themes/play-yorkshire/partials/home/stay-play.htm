@@ -1,0 +1,54 @@
+description = "Displays upcoming stay & plays on home page"
+
+[builderList]
+modelClass = "JakeFeeley\PlayYorkshire\Models\StayPlay"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "name"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+<div id="block5">
+    <section id="inspiration" class="band band--grey pb-5">
+        <h2 data-color="blue" class="tab tab--blue">
+            <span>Stay & Play</span>
+        </h2>
+        <div class="intro center">
+            <p>Discover upcoming Stay & Play events around Yorkshire</p>
+        </div>
+        <div class="grid" data-itemratio="325x225" data-cols="4@768,2">
+            <div class="grid__inner">
+                <div class="grid__itemwrapper">
+                    {% for item in records %}
+                    <div class="grid__item {% if loop.index == 1 or loop.index == 4%}grid__item--x2 grid__item--y2{% endif %}">
+                        <article class="block block block--hasimage block--blue block--wtyfeaturecontent">
+                            <a href="#" target="" class="block__link">
+                                <div class="block__media">
+                                    <div class="block__image">
+                                        <img src="{% if item.image %}{{ item.image.path }}{% else %}http://via.placeholder.com/{% if loop.index == 1 or loop.index == 4%}1000{% else %}500{% endif %}{% endif %}" alt="Golf in {{ item.name }}" class="" />
+                                    </div>
+                                    <h4 class="tab tab--blue tab--small">
+                                        <span>Stay & Play</span>
+                                    </h4>
+                                    <div class="block__contentouter">
+                                        <div class="block__content">
+                                            <h3 class="heading--secondary">
+                                                {{ item.name }}
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="center buttons">
+            <a href="/stay-play" target="" class="button button--blue button--chevronr">View all Stay & Play Events</a>
+        </div>
+    </section>
+</div>

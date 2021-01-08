@@ -1,0 +1,109 @@
+title = "All Golf Clubs"
+url = "/golf-clubs"
+layout = "_main-layout"
+is_hidden = 0
+
+[builderList]
+modelClass = "JakeFeeley\PlayYorkshire\Models\GolfClub"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "name"
+noRecordsMessage = "No records found"
+detailsPage = "golf-clubs/golf-club-county"
+detailsKeyColumn = "slug"
+detailsUrlParameter = "slug"
+pageNumber = "{{ :page }}"
+==
+<div class="pagehero pagehero--places">
+    <h2 class="tab tab--orange tab--large"><span>Golf Clubs</span></h2>
+
+    <div class="pagehero__image">
+        <div
+            class="crop-up loaded"
+            data-gravity=".498,.453"
+            data-box="0,0,1,1"
+            data-zoom="true"
+            data-upscale-url="http://via.placeholder.com/1800x560"
+            data-upscale-step="200"
+            data-img-alt="Places"
+            style="position: relative; overflow: hidden;"
+        >
+            <img alt="Places" src="http://via.placeholder.com/1800x560" />
+        </div>
+    </div>
+
+    <div class="pagehero__outercontent">
+        <div class="pagehero__innercontent">
+            <h1 class="heading--primary">
+                <a href="" title="Places" class="pagehero__link"> Golf Clubs </a>
+            </h1>
+        </div>
+    </div>
+
+    <div class="pagehero__imagetag">
+        <a href="" title="Ribblehead Viaduct, Settle" class="pagehero__imagetag__locationlink">
+            <h5 class="camera">Ribblehead Viaduct, Settle</h5>
+        </a>
+    </div>
+</div>
+
+<ul class="menu menu--middle center">
+    <li class="menu__item menu__item--orange">
+        <a href="/golf-clubs/north-yorkshire" target="" class="">North Yorkshire</a>
+    </li>
+    <li class="menu__item menu__item--orange">
+        <a href="/golf-clubs/east-yorkshire" target="" class="">East Yorkshire</a>
+    </li>
+    <li class="menu__item menu__item--orange">
+        <a href="/golf-clubs/south-yorkshire" target="" class="">South Yorkshire</a>
+    </li>
+    <li class="menu__item menu__item--orange">
+        <a href="/golf-clubs/west-yorkshire" target="" class="">West Yorkshire</a>
+    </li>
+</ul>
+
+<div class="band--topspace">
+    <div id="block1">
+        <section class="band band--">
+            <div class="pagewrapper">
+                <h1 class="heading--secondary center">Golf Clubs in Yorkshire</h1>
+                <div class="intro center">
+                    <p>Yorkshire is home to over {{ records.count }} golf clubs</p>
+                </div>
+
+                <div class="grid" data-itemratio="310x291" data-cols="4@768,2@480,1" data-spacing="19" id="wty_grid_0.5658008567755162">
+                    <div class="grid__inner">
+                        <div class="grid__itemwrapper">
+                            <!-- Start -->
+                            {% for item in records %} {% if item.is_published == 1 %}
+                            <div class="grid__item">
+                                <article class="block block--hasimage block--orange block--wtyfeaturecontent">
+                                    <a href="/golf-clubs/{{ item.county.slug }}/{{ item.city.slug }}/{{ item.slug }}" target="" class="block__link">
+                                        <div class="block__media">
+                                            <div class="block__image">
+                                                <img src="{{ item.banner.path }}"  alt=""  class=""/>
+                                            </div>
+                                            <h4 class="tab tab--orange tab--small"><span>{{ item.county.name }}</span></h4>
+                                            <div class="block__contentouter">
+                                                <div class="block__content">
+                                                    <h3 class="heading--secondary">{{ item.name }}</h3>
+                                                    <div class="block__hovercontent">
+                                                        <p>
+                                                            {{ item.short_description|raw }}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                            {% endif %} {% endfor %}
+                            <!-- End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

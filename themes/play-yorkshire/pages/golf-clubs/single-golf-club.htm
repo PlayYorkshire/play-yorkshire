@@ -1,0 +1,175 @@
+title = "Single Golf Club"
+url = "/golf-clubs/:county/:city/:slug"
+layout = "_main-layout"
+is_hidden = 0
+
+[builderDetails]
+modelClass = "JakeFeeley\PlayYorkshire\Models\GolfClub"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "id"
+notFoundMessage = "Record not found"
+==
+<div class="pagehero pagehero--places">
+  <h2 class="tab tab--orange tab--large"><span>Golf Clubs</span></h2>
+
+  <div class="pagehero__image">
+    <div
+      class="crop-up loaded"
+      data-gravity=".498,.453"
+      data-box="0,0,1,1"
+      data-zoom="true"
+      data-upscale-url="{% if record.banner %}{{ record.banner.path }}{% else %}http://via.placeholder.com/1800x560{% endif %}"
+      data-upscale-step="200"
+      data-img-alt="Places"
+      style="position: relative; overflow: hidden;"
+    >
+      <img
+        alt="Places"
+        src="http://via.placeholder.com/1800x560"
+      />
+    </div>
+  </div>
+
+  <div class="pagehero__outercontent">
+    <div class="pagehero__innercontent">
+      <h1 class="heading--primary">
+        <a href="" title="Places" class="pagehero__link"> {{ record.name }} </a>
+      </h1>
+    </div>
+  </div>
+</div>
+
+<ul class="menu menu--middle center">
+    <li class="menu__item menu__item--orange">
+        <a href="#about" target="" class="">About the Club</a>
+    </li>
+    <li class="menu__item menu__item--orange">
+        <a href="#facilities" target="" class="">Facilities</a>
+    </li>
+    <li class="menu__item menu__item--orange">
+        <a href="#stayplay" target="" class="">Stay & Play</a>
+    </li>
+    <li class="menu__item menu__item--orange">
+        <a href="#opendays" target="" class="">Open Days</a>
+    </li>
+    <li class="menu__item menu__item--orange">
+        <a href="#" target="" class="">Directions</a>
+    </li>
+</ul>
+
+<section class="band band--topspace bg-lightgrey" id="about">
+    <div class="pagewrapper">
+        <div class="row">
+            <div class="col col--x4" style="float: right;">
+                <aside class="h-full bg-white">
+                    <div class="map info__map-container golfclub--logo">
+                        <img
+                            src="{{ record.image.path }}"
+                            alt="{{ record.name }}"
+                        />
+                    </div>
+                
+                    <div class="p-10 md:p-20">
+                        <h4 class="heading--normal mt-0">{% if record.address_line_1 %}{{ record.address_line_1 }},{% endif %} {% if record.address_line_2 %}{{ record.address_line_2 }},{% endif %} {% if record.address_line_3 %}{{ record.address_line_3 }},{% endif %} {% if record.city %}{{ record.city.name }},{% endif%} {% if record.county %}{{ record.county.name }}{% endif %} {% if record.postcode %}{{ record.postcode }}{% endif %}</h4>
+                
+                        <hr class="my-20" />
+                
+                        <h3 class="metaname m-0">Phone</h3>
+                        <p class="phone blue">{{ record.phone }}</p>
+                
+                        <h3 class="metaname m-0">Email</h3>
+                        <p class="email blue"><a href="mailto:{{ record.email }}" class="blue hocus:pink">{{ record.email }}</a></p>
+                
+                        <a href="http://{{ record.website }}" class="w-full button outgoing-link button--blue pb-10 mt-10 button--fa button--spread" target="_blank">Visit Website <i class="fa fa-chevron-right ml-10"></i></a>
+                
+                    </div>
+                </aside>
+
+            </div>
+            <div class="col col--x8">
+                <article class="editorial pr-40">
+                    <div>
+                        <h2>About the Club</h2>
+                        {{ record.description|raw }}
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="band--topspace bg-white" id="facilities">
+    <div class="pagewrapper">
+        <div class="row">
+            <div class="col col--x12">
+                <article class="editorial">
+                    <div>
+                        <h2>Facilities</h2>
+                        <ul class="facilities no-style">
+                            {% for item in record.amenities %}
+                            <li class="facilities__item"><i class="fa fa-check blue"></i> {{ item.name }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="band--topspace bg-white" id="stayplay">
+    <div class="pagewrapper">
+        <div class="row">
+            <div class="col col--x12">
+                <article class="editorial">
+                    <div>
+                        <h2 class="blue">Stay & Play</h2>
+                        <table>
+                          <tr class="bg-darkgrey white">
+                            <th class="pt-10 pb-10 border-0">Date</th>
+                            <th class="pt-10 pb-10 border-0">Location</th>
+                            <th class="pt-10 pb-10 border-0">Price</th>
+                          </tr>
+                          {% for item in record.stayplays %}
+                          <tr>
+                              <td class="pt-10 pb-10 border-0">{{ item.date|date('d M Y') }}</td>
+                              <td class="pt-10 pb-10 border-0">{{ item.venue.name }}</td>
+                              <td class="pt-10 pb-10 border-0">{{ item.price }}</td>
+                          </tr>
+                          {% endfor %}
+                        </table>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="band band--topspace bg-white" id="opendays">
+    <div class="pagewrapper">
+        <div class="row">
+            <div class="col col--x12">
+                <article class="editorial">
+                    <div>
+                        <h2 class="mint">Open Days</h2>
+                        <table>
+                          <tr class="bg-darkgrey white">
+                            <th class="pt-10 pb-10 border-0">Date</th>
+                            <th class="pt-10 pb-10 border-0">Location</th>
+                            <th class="pt-10 pb-10 border-0">Price</th>
+                          </tr>
+                          {% for item in record.opendays %}
+                          <tr>
+                              <td class="pt-10 pb-10 border-0">{{ item.date|date('d M Y') }}</td>
+                              <td class="pt-10 pb-10 border-0">{{ item.location }}</td>
+                              <td class="pt-10 pb-10 border-0">{{ item.price }}</td>
+                          </tr>
+                          {% endfor %}
+                        </table>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>

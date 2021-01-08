@@ -1,0 +1,33 @@
+scopes:
+
+    golfclub:
+    
+        label: Golf Club
+        
+        modelClass: JakeFeeley\PlayYorkshire\Models\GolfClub
+        
+        conditions: golf_club_id in (:filtered)
+    
+    collection:
+    
+        label: Collection
+        
+        modelClass: JakeFeeley\PlayYorkshire\Models\Collection
+        
+        conditions: collection_id in (:filtered)
+        
+    created_at:
+        
+        label: Date of Enquiry
+        
+        type: daterange
+        
+        minDate: '2021-01-01'
+        
+        maxDate: '2030-01-01'
+        
+        yearRange: 10
+        
+        conditions: created_at >= ':after' AND created_at <= ':before'
+        
+        ignoreTimezone: true

@@ -1,0 +1,35 @@
+columns:
+    id:
+        label: ID
+        type: text
+        searchable: true
+        sortable: true
+    name:
+        label: Name
+        type: text
+        searchable: true
+        sortable: true
+    county:
+        label: County
+        type: text
+        searchable: true
+        sortable: true
+        select: name
+        relation: county
+    city:
+        label: City
+        type: text
+        searchable: true
+        sortable: true
+        select: name
+        relation: city
+    is_featured:
+        label: 'Featured?'
+        type: switch
+        searchable: true
+        sortable: true
+    is_published:
+        label: Published
+        type: switch
+        searchable: true
+        sortable: true

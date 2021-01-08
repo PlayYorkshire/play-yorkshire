@@ -1,0 +1,30 @@
+fields:
+    name:
+        label: Name
+        span: full
+        type: text
+    dropdown1:
+        label: Dropdown
+        span: full
+        options:
+            'Outbound Phone Call': 'Phone Call'
+            'Inbound Phone Call': 'Inbound Phone Call'
+            Email: Email
+            Meeting: Meeting
+        showSearch: true
+        type: dropdown
+    due:
+        label: 'Due Date'
+        mode: date
+        span: auto
+        type: datepicker
+    reminder:
+        label: 'Remind me on?'
+        mode: date
+        span: auto
+        type: datepicker
+    body:
+        label: Description
+        size: small
+        span: full
+        type: textarea

@@ -1,0 +1,167 @@
+title = "All Stay & Play"
+url = "/stay-play"
+layout = "_main-layout"
+is_hidden = 0
+
+[builderList]
+modelClass = "JakeFeeley\PlayYorkshire\Models\StayPlay"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "name"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+<div class="pagehero pagehero--accommodation">
+    <h2 class="tab tab--blue tab--large"><span>Stay & Play</span></h2>
+
+    <div class="pagehero__image">
+        <div
+            class="crop-up loaded"
+            data-gravity=".498,.453"
+            data-box="0,0,1,1"
+            data-zoom="true"
+            data-upscale-url="http://via.placeholder.com/1800x560"
+            data-upscale-step="200"
+            data-img-alt="Places"
+            style="position: relative; overflow: hidden;"
+        >
+            <img alt="Places" src="http://via.placeholder.com/1800x560" />
+        </div>
+    </div>
+
+    <div class="pagehero__outercontent">
+        <div class="pagehero__innercontent">
+            <h1 class="heading--primary">
+                <a href="" title="Places" class="pagehero__link"> Stay & Play </a>
+            </h1>
+        </div>
+    </div>
+
+    <div class="pagehero__imagetag">
+        <a href="" title="Ribblehead Viaduct, Settle" class="pagehero__imagetag__locationlink">
+            <h5 class="camera">Ribblehead Viaduct, Settle</h5>
+        </a>
+    </div>
+</div>
+
+<div class="bar">
+    <div class="pagewrapper">
+        <div class="md:flex md:items-center">
+            <div class="md:flex-1">
+                <h2 class="center md:left md:mb-0">Fancy a night away plus a round of golf in <span class="blue">Yorkshire?</span></h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="band band--grey py-20 lg:py-40 hidden sm:block">
+    <div class="pagewrapper">
+        <form class="md:flex md:-mx-5" action="/stay-play" method="GET">
+
+            <div class="mb-10 md:mb-0 md:flex-1">
+                <div class="md:mx-5">
+                    <div class="formitem--select select--custom select--custom-fa">
+                        <select name="rounds" class="bg-white">
+                            <option value="">Rounds</option>
+                            <option value="">Any</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                        <i class="fa fa-angle-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-10 md:mb-0 md:flex-1">
+                <div class="md:mx-5">
+                    <div class="formitem--select select--custom select--custom-fa">
+                        <select name="county" class="bg-white">
+                            <option value="">County</option>
+                            <option value="">Any</option>
+                            <option value="northyorkshire">North Yorkshire</option>
+                            <option value="eastyorkshire">East Yorkshire</option>
+                            <option value="southyorkshire">South Yorkshire</option>
+                            <option value="westyorkshire">West Yorkshire</option>
+                        </select>
+                        <i class="fa fa-angle-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-10 md:mb-0 md:flex-1">
+                <div class="md:mx-5">
+                    <div class="formitem--select select--custom select--custom-fa">
+                        <select name="occupancy" class="bg-white">
+                            <option value="">No. of Guests</option>
+                            <option value="">Any</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <!-- DON'T FORGET TO CHANGE THE MAIN PARTIAL -->
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                        <i class="fa fa-angle-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="md:mx-5">
+                    <button type="submit" class="w-full md:w-auto button button--blue button--fa">Search &amp; Book <i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+</section>
+
+<section class="band band--topspace">
+    <div class="pagewrapper">
+        <div class="row">
+            <div class="col col--x10">
+                <div class="grid" data-itemratio="310x174" data-cols="3@480,1" data-spacing="19">
+                    <div class="grid__inner">
+                        <div class="grid__itemwrapper">
+                            {% for item in records %}
+                            <div class="grid__item">
+                                <article class="block block--blue block--hasimage">
+                                    <a href="/view/accommodation/york/farthings-guest-house-78885" target="" class="block__link">
+                                        <div class="block__media">
+                                            <div class="block__image">
+                                                <img src="http://via.placeholder.com/1800x560" alt="" class=""/>
+                                            </div>
+
+                                            <div class="block__contentouter"></div>
+                                        </div>
+                                        <div class="block__text">
+                                            <h1 class="heading--tertiary">{{ item.name }}</h1>
+                                            <p class="location">{{ item.golfclub.name }}</p>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <span class="button button--disabled button--chevronl button--blue">Previous</span>
+
+                    <a href="https://www.yorkshire.com/accommodation/listings" class="button button--blue button--selected">1</a>
+                    <a href="https://www.yorkshire.com/accommodation/listings?p=2" class="button button--blue">2</a>
+                    <a href="https://www.yorkshire.com/accommodation/listings?p=3" class="button button--blue">3</a>
+                    <a href="https://www.yorkshire.com/accommodation/listings?p=4" class="button button--blue">4</a>
+                    <a href="https://www.yorkshire.com/accommodation/listings?p=5" class="button button--blue">5</a>
+                    <span class="pagination__ellipses">...</span>
+                    <a href="https://www.yorkshire.com/accommodation/listings?p=81" class="button button--blue">81</a>
+
+                    <a href="https://www.yorkshire.com/accommodation/listings?p=2" class="button button--blue button--chevronr">Next</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

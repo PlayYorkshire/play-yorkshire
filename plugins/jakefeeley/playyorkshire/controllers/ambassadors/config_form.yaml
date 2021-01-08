@@ -1,0 +1,10 @@
+name: Ambassadors
+form: $/jakefeeley/playyorkshire/models/ambassador/fields.yaml
+modelClass: JakeFeeley\PlayYorkshire\Models\Ambassador
+defaultRedirect: jakefeeley/playyorkshire/ambassadors
+create:
+    redirect: 'jakefeeley/playyorkshire/ambassadors/update/:id'
+    redirectClose: jakefeeley/playyorkshire/ambassadors
+update:
+    redirect: jakefeeley/playyorkshire/ambassadors
+    redirectClose: jakefeeley/playyorkshire/ambassadors

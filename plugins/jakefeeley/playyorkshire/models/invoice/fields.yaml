@@ -1,0 +1,22 @@
+fields:
+    reference:
+        label: 'Invoice Reference'
+        span: left
+        type: text
+        comment: 'What is the invoice reference?'
+    date:
+        label: 'Invoice Date'
+        mode: datetime
+        span: auto
+        type: datepicker
+    file:
+        label: 'Invoice PDF'
+        span: full
+        mode: file
+        useCaption: 0
+        thumbOptions:
+            mode: crop
+            extension: auto
+        fileTypes: pdf
+        mimeTypes: pdf
+        type: fileupload

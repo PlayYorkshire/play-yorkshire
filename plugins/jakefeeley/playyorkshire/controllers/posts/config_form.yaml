@@ -1,0 +1,10 @@
+name: Posts
+form: $/jakefeeley/playyorkshire/models/post/fields.yaml
+modelClass: JakeFeeley\PlayYorkshire\Models\Post
+defaultRedirect: jakefeeley/playyorkshire/posts
+create:
+    redirect: 'jakefeeley/playyorkshire/posts/update/:id'
+    redirectClose: jakefeeley/playyorkshire/posts
+update:
+    redirect: jakefeeley/playyorkshire/posts
+    redirectClose: jakefeeley/playyorkshire/posts

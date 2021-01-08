@@ -1,0 +1,11 @@
+name: Cities
+modelClass: JakeFeeley\PlayYorkshire\Models\City
+form: $/jakefeeley/playyorkshire/models/city/fields.yaml
+defaultRedirect: jakefeeley/playyorkshire/cities
+create:
+    redirect: 'jakefeeley/playyorkshire/cities/update/:id'
+    redirectClose: jakefeeley/playyorkshire/cities
+update:
+    redirect: jakefeeley/playyorkshire/cities
+    redirectClose: jakefeeley/playyorkshire/cities
+preview: {  }

@@ -1,0 +1,23 @@
+columns:
+    id:
+        label: ID
+        type: text
+        searchable: true
+        sortable: true
+    name:
+        label: Name
+        type: text
+        searchable: true
+        sortable: true
+    date:
+        label: Date
+        type: date
+        searchable: true
+        sortable: true
+    venue:
+        label: Venue
+        type: text
+        searchable: true
+        sortable: true
+        select: name
+        relation: venue

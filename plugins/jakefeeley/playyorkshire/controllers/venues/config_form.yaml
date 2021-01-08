@@ -1,0 +1,10 @@
+name: Venues
+form: $/jakefeeley/playyorkshire/models/venue/fields.yaml
+modelClass: JakeFeeley\PlayYorkshire\Models\Venue
+defaultRedirect: jakefeeley/playyorkshire/venues
+create:
+    redirect: 'jakefeeley/playyorkshire/venues/update/:id'
+    redirectClose: jakefeeley/playyorkshire/venues
+update:
+    redirect: jakefeeley/playyorkshire/venues
+    redirectClose: jakefeeley/playyorkshire/venues

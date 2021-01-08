@@ -1,0 +1,71 @@
+fields:
+    name:
+        label: Name
+        span: auto
+        type: text
+    slug:
+        label: Slug
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text
+tabs:
+    fields:
+        dob:
+            label: 'Date of Birth'
+            span: auto
+            type: text
+            tab: General
+        pro_date:
+            label: 'Turned Pro Date'
+            span: auto
+            type: text
+            tab: General
+        tour_profile:
+            label: 'Tour Profile URL'
+            span: auto
+            type: text
+            tab: General
+        home_town:
+            label: 'Home Town'
+            span: auto
+            type: text
+            tab: General
+        body:
+            label: Description
+            size: large
+            span: full
+            type: richeditor
+            tab: General
+        seo_title:
+            label: 'Meta Title'
+            span: full
+            type: text
+            tab: SEO
+        seo_description:
+            label: 'Meta Description'
+            size: small
+            span: full
+            type: textarea
+            tab: SEO
+        image:
+            label: 'Profile Image'
+            mode: file
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: Media
+        banner:
+            label: Banner
+            span: auto
+            mode: file
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            type: fileupload
+            tab: Media

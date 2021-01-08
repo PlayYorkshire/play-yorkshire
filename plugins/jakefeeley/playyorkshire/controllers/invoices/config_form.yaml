@@ -1,0 +1,10 @@
+name: Invoices
+form: $/jakefeeley/playyorkshire/models/invoice/fields.yaml
+modelClass: JakeFeeley\PlayYorkshire\Models\Invoice
+defaultRedirect: jakefeeley/playyorkshire/invoices
+create:
+    redirect: 'jakefeeley/playyorkshire/invoices/update/:id'
+    redirectClose: jakefeeley/playyorkshire/invoices
+update:
+    redirect: jakefeeley/playyorkshire/invoices
+    redirectClose: jakefeeley/playyorkshire/invoices

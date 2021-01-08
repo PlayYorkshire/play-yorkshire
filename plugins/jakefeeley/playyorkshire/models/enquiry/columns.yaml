@@ -1,0 +1,15 @@
+columns:
+    first_name:
+        label: 'First Name'
+        type: text
+        searchable: true
+        sortable: false
+    last_name:
+        label: 'Last Name'
+        type: text
+        searchable: true
+    created_at:
+        label: 'Date of Enquiry'
+        type: date
+        searchable: false
+        sortable: true

@@ -1,0 +1,10 @@
+name: Categories
+form: $/jakefeeley/playyorkshire/models/category/fields.yaml
+modelClass: JakeFeeley\PlayYorkshire\Models\Category
+defaultRedirect: jakefeeley/playyorkshire/categories
+create:
+    redirect: 'jakefeeley/playyorkshire/categories/update/:id'
+    redirectClose: jakefeeley/playyorkshire/categories
+update:
+    redirect: jakefeeley/playyorkshire/categories
+    redirectClose: jakefeeley/playyorkshire/categories

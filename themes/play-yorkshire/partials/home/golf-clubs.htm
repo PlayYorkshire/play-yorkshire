@@ -1,0 +1,58 @@
+description = "Displays counties on home page"
+
+[builderList]
+modelClass = "JakeFeeley\PlayYorkshire\Models\County"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "name"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+<div id="block2">
+    <section id="thingsToDo" class="band band--">
+        <h2 class="tab tab--orange">
+            <span>Golf Clubs</span>
+        </h2>
+        <div class="pagewrapper">
+            <div class="intro center">
+                <p>Jump into Yorkshire and discover the best UK golf destination</p>
+            </div>
+
+            <div class="grid" data-itemratio="310x291" data-cols="3@640,2" data-spacing="19">
+                <div class="grid__inner">
+                    <div class="grid__itemwrapper">
+                        {% for county in records %}
+                        <div class="grid__item {% if loop.index == 1 or loop.index == 4%}grid__item--x2{% endif %}">
+                            <article class="block block block--hasimage block--orange block--wtyfeaturecontent">
+                                <a href="/golf-clubs/{{ county.slug }}" target="" class="block__link">
+                                    <div class="block__media">
+                                        <div class="block__image">
+                                            <img src="{% if county.image %}{{ county.image.path }}{% else %}http://via.placeholder.com/1000x500{% endif %}" alt="Golf in {{ county.name }}" class="" />
+                                        </div>
+                                        <h4 class="tab tab--orange tab--small">
+                                            <span>Golf Clubs</span>
+                                        </h4>
+                                        <div class="block__contentouter">
+                                            <div class="block__content">
+                                                <h3 class="heading--secondary">
+                                                    {{ county.name }}
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="center buttons">
+                <a href="/golf-clubs" target="" class="button button--orange button--chevronr">View all Golf Clubs</a>
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,18 @@
+columns:
+    id:
+        label: ID
+        type: text
+        searchable: true
+        sortable: true
+    name:
+        label: Name
+        type: text
+        searchable: true
+        sortable: true
+    county:
+        label: County
+        type: text
+        searchable: true
+        sortable: true
+        select: name
+        relation: county

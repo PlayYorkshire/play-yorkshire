@@ -1,0 +1,26 @@
+columns:
+    id:
+        label: ID
+        type: text
+        searchable: true
+        sortable: true
+    name:
+        label: Name
+        type: text
+        searchable: true
+        sortable: true
+    type:
+        label: Type
+        type: text
+        searchable: true
+        sortable: true
+    due:
+        label: 'Due on'
+        type: date
+        searchable: true
+        sortable: true
+    reminder:
+        label: 'Remind me on'
+        type: date
+        searchable: true
+        sortable: true

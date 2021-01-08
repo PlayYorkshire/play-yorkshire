@@ -1,0 +1,10 @@
+name: Counties
+form: $/jakefeeley/playyorkshire/models/county/fields.yaml
+modelClass: JakeFeeley\PlayYorkshire\Models\County
+defaultRedirect: jakefeeley/playyorkshire/counties
+create:
+    redirect: 'jakefeeley/playyorkshire/counties/update/:id'
+    redirectClose: jakefeeley/playyorkshire/counties
+update:
+    redirect: jakefeeley/playyorkshire/counties
+    redirectClose: jakefeeley/playyorkshire/counties

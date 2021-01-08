@@ -1,0 +1,16 @@
+name: GolfClubs
+modelClass: JakeFeeley\PlayYorkshire\Models\GolfClub
+form: $/jakefeeley/playyorkshire/models/golfclub/fields.yaml
+defaultRedirect: jakefeeley/playyorkshire/golfclubs
+create:
+    title: 'Create Golf Club'
+    redirect: 'jakefeeley/playyorkshire/golfclubs/update/:id'
+    redirectClose: jakefeeley/playyorkshire/golfclubs
+    flashSave: 'Golf Club Created'
+update:
+    title: 'Update Golf Club'
+    redirect: jakefeeley/playyorkshire/golfclubs
+    redirectClose: jakefeeley/playyorkshire/golfclubs
+    flashSave: 'Golf Club Updated'
+    flashDelete: 'Golf Club  Deleted'
+preview: {  }

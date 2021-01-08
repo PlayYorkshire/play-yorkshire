@@ -1,0 +1,47 @@
+fields:
+    name:
+        label: Name
+        span: auto
+        type: text
+    slug:
+        label: Slug
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text
+    county:
+        label: County
+        nameFrom: name
+        descriptionFrom: description
+        span: auto
+        type: relation
+tabs:
+    fields:
+        description:
+            label: Description
+            span: full
+            size: giant
+            type: richeditor
+            tab: General
+        seo_title:
+            label: 'Meta Title'
+            span: full
+            type: text
+            tab: SEO
+        seo_description:
+            label: 'Meta Description'
+            size: small
+            span: full
+            type: textarea
+            tab: SEO
+        image:
+            label: Image
+            mode: file
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: Media

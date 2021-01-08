@@ -1,0 +1,10 @@
+name: StayPlays
+form: $/jakefeeley/playyorkshire/models/stayplay/fields.yaml
+modelClass: JakeFeeley\PlayYorkshire\Models\StayPlay
+defaultRedirect: jakefeeley/playyorkshire/stayplays
+create:
+    redirect: 'jakefeeley/playyorkshire/stayplays/update/:id'
+    redirectClose: jakefeeley/playyorkshire/stayplays
+update:
+    redirect: jakefeeley/playyorkshire/stayplays
+    redirectClose: jakefeeley/playyorkshire/stayplays

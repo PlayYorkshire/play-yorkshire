@@ -1,0 +1,48 @@
+fields:
+    name:
+        label: Name
+        span: auto
+        type: text
+    slug:
+        label: Slug
+        span: auto
+        preset:
+            field: name
+            type: url
+        type: text
+tabs:
+    fields:
+        description:
+            label: Description
+            size: giant
+            span: full
+            type: richeditor
+            tab: General
+        itinerary:
+            label: Itinerary
+            prompt: 'New Item'
+            span: full
+            type: repeater
+            tab: Itinerary
+            form: {  }
+        seo_title:
+            label: 'Meta Title'
+            span: full
+            type: text
+            tab: SEO
+        seo_description:
+            label: 'Meta Description'
+            size: small
+            span: full
+            type: textarea
+            tab: SEO
+        image:
+            label: 'Featured Image'
+            mode: file
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: Media

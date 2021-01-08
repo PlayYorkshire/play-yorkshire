@@ -1,0 +1,70 @@
+scopes:
+
+    counties:
+    
+        label: County
+        
+        modelClass: JakeFeeley\PlayYorkshire\Models\County
+        
+        conditions: county_id in (:filtered)
+        
+        nameFrom: name
+        
+        
+    cities:
+    
+        label: City
+        
+        modelClass: JakeFeeley\PlayYorkshire\Models\City
+        
+        conditions: city_id in (:filtered)
+        
+        nameFrom: name
+        
+    memership:
+    
+        label: Membership Plan
+        
+        modelClass: JakeFeeley\PlayYorkshire\Models\Membership
+        
+        conditions: membership_id in (:filtered)
+        
+        nameFrom: name
+            
+    renewal_date:
+        
+        label: Renewal Date
+        
+        type: daterange
+        
+        minDate: '2021-01-01'
+        
+        maxDate: '2030-01-01'
+        
+        yearRange: 10
+        
+        conditions: renewal_date >= ':after' AND renewal_date <= ':before'
+        
+        ignoreTimezone: true
+        
+    is_published:
+        
+        label: Published?
+        
+        type: checkbox
+        
+        default: 0
+        
+        conditions:
+            - is_published = true
+            
+    is_featured:
+        
+        label: Featured?
+        
+        type: checkbox
+        
+        default: 0
+        
+        conditions:
+            - is_featured = true

@@ -1,0 +1,10 @@
+name: Partners
+form: $/jakefeeley/playyorkshire/models/partner/fields.yaml
+modelClass: JakeFeeley\PlayYorkshire\Models\Partner
+defaultRedirect: jakefeeley/playyorkshire/partners
+create:
+    redirect: 'jakefeeley/playyorkshire/partners/update/:id'
+    redirectClose: jakefeeley/playyorkshire/partners
+update:
+    redirect: jakefeeley/playyorkshire/partners
+    redirectClose: jakefeeley/playyorkshire/partners

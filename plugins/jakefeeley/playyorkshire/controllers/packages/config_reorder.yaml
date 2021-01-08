@@ -1,0 +1,4 @@
+title: Packages
+modelClass: JakeFeeley\PlayYorkshire\Models\Package
+toolbar:
+    buttons: reorder_toolbar

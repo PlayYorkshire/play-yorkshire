@@ -1,0 +1,10 @@
+name: Memberships
+form: $/jakefeeley/playyorkshire/models/membership/fields.yaml
+modelClass: JakeFeeley\PlayYorkshire\Models\Membership
+defaultRedirect: jakefeeley/playyorkshire/memberships
+create:
+    redirect: 'jakefeeley/playyorkshire/memberships/update/:id'
+    redirectClose: jakefeeley/playyorkshire/memberships
+update:
+    redirect: jakefeeley/playyorkshire/memberships
+    redirectClose: jakefeeley/playyorkshire/memberships

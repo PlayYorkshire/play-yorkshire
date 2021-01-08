@@ -1,0 +1,26 @@
+fields:
+    name:
+        label: Name
+        span: auto
+        type: text
+    slug:
+        label: Slug
+        span: auto
+        preset:
+            field: slug
+            type: slug
+        type: text
+    price:
+        label: Price
+        span: auto
+        type: text
+    date:
+        label: Date
+        mode: date
+        span: auto
+        type: datepicker
+    body:
+        label: Body
+        size: large
+        span: full
+        type: richeditor

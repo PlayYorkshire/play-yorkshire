@@ -1,0 +1,4 @@
+title: Ambassadors
+modelClass: JakeFeeley\PlayYorkshire\Models\Ambassador
+toolbar:
+    buttons: reorder_toolbar

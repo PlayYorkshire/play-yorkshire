@@ -1,0 +1,10 @@
+name: Activities
+form: $/jakefeeley/playyorkshire/models/activity/fields.yaml
+modelClass: JakeFeeley\PlayYorkshire\Models\Activity
+defaultRedirect: jakefeeley/playyorkshire/activities
+create:
+    redirect: 'jakefeeley/playyorkshire/activities/update/:id'
+    redirectClose: jakefeeley/playyorkshire/activities
+update:
+    redirect: jakefeeley/playyorkshire/activities
+    redirectClose: jakefeeley/playyorkshire/activities

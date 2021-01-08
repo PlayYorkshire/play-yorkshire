@@ -1,0 +1,10 @@
+name: Collections
+form: $/jakefeeley/playyorkshire/models/collection/fields.yaml
+modelClass: JakeFeeley\PlayYorkshire\Models\Collection
+defaultRedirect: jakefeeley/playyorkshire/collections
+create:
+    redirect: 'jakefeeley/playyorkshire/collections/update/:id'
+    redirectClose: jakefeeley/playyorkshire/collections
+update:
+    redirect: jakefeeley/playyorkshire/collections
+    redirectClose: jakefeeley/playyorkshire/collections
